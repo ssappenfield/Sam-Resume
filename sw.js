@@ -6,21 +6,31 @@ const CACHE = "resume-page";
 const offlineFallbackPage = "fallback.html";
 
 // Install stage sets up the offline page in the cache and opens a new cache
-self.addEventListener("install", function (event) {
-  console.log("Sam Resume Install Event processing");
+self.addEventListener( "install", function( event ){
+ 
 
+  // console.log( "WORKER: install event in progress." );
+  
+ 
+  // immediately take over
+ 
+  self.skipWaiting();
+  
+ 
   event.waitUntil(
-    caches.open(CACHE).then(function (cache) {
-      console.log("Sam Resume Cached offline page during install");
-
-      if (offlineFallbackPage === "fallback.html") {
-        return cache.add(new Response(offlineFallbackPage));
-      }
-
-      return cache.add(offlineFallbackPage);
-    })
+ 
+  caches.open( CACHE )
+ 
+  .then(function( cache ){
+ 
+  return cache.addAll( preinstall );
+ 
+  })
+ 
   );
-});
+  
+ 
+ });
 
 // If any fetch fails, it will show the offline page.
 self.addEventListener("fetch", function (event) {
