@@ -43,7 +43,8 @@
 
 #addiinfo{
     grid-column:1/3;
-    grid-row-start: 1;  
+    grid-row-start: 1; 
+    font-size:2rem; 
  }
  #addiinfo p{
      margin-block-start: 0.5em;
@@ -166,12 +167,12 @@ ul{
 .colon dt{
     float:left;
     clear:left;
-    text-align:right;
+    text-align:left;
     
     
 }
  .colon dt::after{
-     content:": ";
+     content:":";
  }
  .colon dd{
     margin-inline-start:0;
