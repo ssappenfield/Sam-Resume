@@ -3,7 +3,7 @@
     "description" : "overview of sam's resume",
     "start_url" : "https://ssappenfield.github.io/Sam-Resume/",
     "scope" : "/Sam-Resume/",
-    "display" : "browser",
+    "display" : "standalone",
     "orientation" : "any",
     "lang" : "English",
     "background_color" : "transparent",
