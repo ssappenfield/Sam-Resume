@@ -1,0 +1,16 @@
+{"dir" : "ltr",
+    "lang" : "English",
+    "name" : "Sam Sappenfield Resume",
+    "scope" : "/Practice-Web-Page/",
+    "display" : "browser",
+    "start_url" : "https://github.mit.edu/pages/ssappenf/Practice-Web-Page/",
+    "short_name" : "Sam",
+    "theme_color" : "transparent",
+    "description" : "Sam's Resume Overview",
+    "orientation" : "any",
+    "background_color" : "transparent",
+    "related_applications" : "",
+    "prefer_related_applications" : "false",
+    "generated" : "true",
+    "icons" : [
+    ]}
