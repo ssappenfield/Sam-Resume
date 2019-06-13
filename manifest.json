@@ -8,79 +8,79 @@
     "lang" : "English",
     "background_color" : "transparent",
     "icons" : [{
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "44x44"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "48x48"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "1240x600"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "300x300"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "150x150"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "88x88"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "24x24"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "50x50"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "620x300"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "192x192"
     },
     {
-        "src":"images/samicon.jpg",
+        "src":"images/samicon.png",
         "sizes": "144x144"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "96x96"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "72x72"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "36x36"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "1024x1024"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "180x180"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "152x152"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "120x120"
     },
     {
-        "src": "images/samicon.jpg",
+        "src": "images/samicon.png",
         "sizes": "76x76"
     }
     ]}
