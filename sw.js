@@ -14,7 +14,7 @@ self.addEventListener("install", function (event) {
       console.log("Sam Resume Cached offline page during install");
 
       if (offlineFallbackPage === "index.html") {
-        return cache.add(new Response("https://ssappenfield.github.io/Sam-Resume/"));
+        return cache.add(new Response());
       }
 
       return cache.add(offlineFallbackPage);
