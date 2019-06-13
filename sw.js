@@ -3,7 +3,7 @@
 const CACHE = "resume-page";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
-const offlineFallbackPage = "index.html";
+const offlineFallbackPage = "fallback.html";
 
 // Install stage sets up the offline page in the cache and opens a new cache
 self.addEventListener("install", function (event) {
@@ -13,8 +13,8 @@ self.addEventListener("install", function (event) {
     caches.open(CACHE).then(function (cache) {
       console.log("Sam Resume Cached offline page during install");
 
-      if (offlineFallbackPage === "index.html") {
-        return cache.add(new Response());
+      if (offlineFallbackPage === "fallback.html") {
+        return cache.add(new Response(offlineFallbackPage));
       }
 
       return cache.add(offlineFallbackPage);
