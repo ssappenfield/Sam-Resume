@@ -23,7 +23,7 @@ self.addEventListener( "install", function( event ){
  
   .then(function( cache ){
  
-  return cache.addAll( preinstall );
+  return cache.add( offlineFallbackPage );
  
   })
  
