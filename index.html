@@ -1,170 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Samantha Sappenfield</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto&display=swap" rel="stylesheet">
-        <script src="javascriptstuff.js" type="text/javascript"></script>
-        <link rel="manifest" href="manifest.json">
-        <meta name="viewport" content="width=device-width">
-        <script>
-            // This is the "Offline page" service worker
 
-// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+<head>
+    <meta charset="utf-8">
+    <title>Samantha Sappenfield</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto&display=swap" rel="stylesheet">
+    <script src="javascriptstuff.js" type="text/javascript"></script>
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width">
+    <script>
+        // This is the "Offline page" service worker
 
-// Check compatibility for the browser we're running this in
-if ("serviceWorker" in navigator) {
-  if (navigator.serviceWorker.controller) {
-    console.log("Sam Resume active service worker found, no need to register");
-  } else {
-    // Register the service worker
-    navigator.serviceWorker
-      .register("sw.js", {
-        scope: "./"
-      })
-      .then(function (reg) {
-        console.log("Sam Resume  Service worker has been registered for scope: " + reg.scope);
-      });
-  }
-}
+        // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
 
-        </script>
-    </head>
-    <body>
-        
-        <header >
-                <div class="grid-container-top">
-                        <div class="grid-item-top"id="topname"><h1>Samantha "Sam" Sappenfield</h1></div>
-                        <div class="grid-item-top"><ul id="toplinks">
-                                <li class="icon"><a href="https://www.linkedin.com/in/samantha-sappenfield/" title="Samantha Sappenfield linkedin" target="_blank"><img src="images/whitelinkedin.png" alt="linkedin icon"></a></li>
-                                
-                                <li class="icon"><a href="Resume.pdf"target="_blank"><img src="images/squaredown.png"  alt="download icon" id="download"></a></li>
-                                <li class="icon"><a href="mailto:sample@test.com" title="email to sam"><img src="images/email.png"alt="email icon" ></a></li>
-                            </ul></div>
-                        
-                        
-                      </div>
-               
-                    
-                    
-           
-            
+        // Check compatibility for the browser we're running this in
+        if ("serviceWorker" in navigator) {
+            if (navigator.serviceWorker.controller) {
+                console.log("Sam Resume active service worker found, no need to register");
+            } else {
+                // Register the service worker
+                navigator.serviceWorker
+                    .register("sw.js", {
+                        scope: "./"
+                    })
+                    .then(function (reg) {
+                        console.log("Sam Resume  Service worker has been registered for scope: " + reg.scope);
+                    });
+            }
+        }
 
-                </header>
-            
-        
-        <main>
-                <div class="grid-container">
-                        <div class="grid-item" id="intro"><img id="face"src="images/anon.png" alt="picture of sam"  >
-                            <div id="maininfo">
-                            <h2 >Sam Sappenfield</h2>
-                            
-                                    <dl class="colon">
-                                        <dt>
-                                            my email
-                                        </dt>
-                                        <dd>ssappenf@mit.edu</dd>
-                                        <dt>
-                                            linkedin
-                                        </dt>
-                                        <dd>
-                                             www.linkedin.com/in/samantha-sappenfield
-                                        </dd>
-                                    </dl>
-                                </div></div>
-                        <div class="grid-item" id="addiinfo"><h1 >Hi I'm <span class="greenwords">Sam</span></h1>
-                            <dl class="colon">
-                                <dt>
-                                        My hometown
-                                </dt>
-                                <dd>
-                                    San Diego 
-                                </dd>
-                                <dt>
-                                        Where i go to school
-                                </dt>
-                                <dd>
-                                        MIT
-                                </dd>
-                                <dt>
-                                        My major
-                                </dt>
-                                <dd>
-                                        Computer Science and Engineering  
-                                </dd>
-                                <dt>
-                                        When i'm graduating
-                                </dt>
-                                <dd>
-                                        June 2021 
-                                </dd>
-                                <dt>
-                                        A lil about me
-                                </dt>
-                                <dd>
-                                        kjdfgh jkvfdsdf ghj kjgfd dsjk lfhas djfhal sdjhfas djfakhf adsjkfhalskdfh laalsdjfalksdfjh 
-                                </dd>
-                                
-                            </dl>
-                            </div>
-                        
-                        <div class="grid-item" id="skills"><h3>Skills</h3>
-                         
-                            <input type="text" placeholder="Filter Skills "id="searchinput" onkeyup="search()" aria-label="search skills" ><ul id="skillslist">
-                            <li data-keywords="1,default, skill" class="skill">skill1</li>
-                            <li data-keywords="2, ability, default"class="skill">ability2</li>
+    </script>
+</head>
 
-                        </ul></div>
-                        <div class="grid-item" id="experience"><h3>Experience</h3>
-                            
-                            <ul class="grid-container"id="experiencelist">
-                                <li ><dl>
-                                    <dt>Explore Intern</dt>
-                                    <dd><p class="organization">Microsoft</p>
-                                        <p class="duration">May 2019&dash;present</p>
-                                        <p class="location">Redmond&comma;Washington</p>
-                                        <p class="description">something </p>
-                                    </dd>
-                                </dl></li>
-                                <li ><dl>
-                                        <dt>6.009 Lecture Assistant</dt>
-                                        <dd><p class="organization">MIT School of Engineering</p>
-                                            <p class="duration">Feb 2019&dash;May 2019</p>
-                                            <p class="location">Cambridge&comma;Massachusetts</p>
-                                            <p class="description">something </p>
-                                        </dd>
-                                    </dl></li>
-                                    <li><dl>
-                                            <dt>New Technologist</dt>
-                                            <dd><p class="organization">Microsoft</p>
-                                                <p class="duration">June 2018&dash;August 2018</p>
-                                                <p class="location">Redmond&comma;Washington</p>
-                                                <p class="description">
-                                                    <ul>
-                                                        <li>
-                                                            <p>Work directly with Microsoft software engineers and program managers through daily training sessions </p>
-                                                        </li>
-                                                        <li>
-                                                            <p>Utilize SDLC and Agile methodology in groups of 4 to develop an app in Swift, promoting safe communities</p>
-                                                        </li>
-                                                    </ul>
-                                                     </p>
-                                            </dd>
-                                        </dl></li>
-                                       
-                            </ul></div>
-                        
-                      </div>
-                
-            
-                    
-                    
-                
-                
-                
-            
-        </main>
-   
-    </body>
+<body>
+
+    <header>
+        <div class="grid-container-top">
+            <div class="grid-item-top" id="topname">
+                <h1>Samantha "Sam" Sappenfield</h1>
+            </div>
+            <div class="grid-item-top">
+                <ul id="toplinks">
+                    <li class="icon"><a href="https://www.linkedin.com/in/samantha-sappenfield/"
+                            title="Samantha Sappenfield linkedin" target="_blank"><img src="images/whitelinkedin.png"
+                                alt="linkedin icon"></a></li>
+                    <li class="icon"><a href="Resume.pdf" target="_blank"><img src="images/squaredown.png"
+                                alt="download icon" id="download"></a></li>
+                    <li class="icon"><a href="mailto:sample@test.com" title="email to sam"><img src="images/email.png"
+                                alt="email icon"></a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </header>
+
+
+    <main>
+        <div class="grid-container">
+            <div class="grid-item" id="intro"><img id="face" src="images/anon.png" alt="picture of sam">
+                <div id="maininfo">
+                    <h2>Sam Sappenfield</h2>
+
+                    <dl class="colon">
+                        <dt>
+                            my email
+                        </dt>
+                        <dd>ssappenf@mit.edu</dd>
+                        <dt>
+                            linkedin
+                        </dt>
+                        <dd>
+                            www.linkedin.com/in/samantha-sappenfield
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="grid-item" id="addiinfo">
+                <h1>Hi I'm <span class="greenwords">Sam</span></h1>
+                <dl class="colon">
+                    <dt>
+                        My hometown
+                    </dt>
+                    <dd>
+                        San Diego
+                    </dd>
+                    <dt>
+                        Where i go to school
+                    </dt>
+                    <dd>
+                        MIT
+                    </dd>
+                    <dt>
+                        My major
+                    </dt>
+                    <dd>
+                        Computer Science and Engineering
+                    </dd>
+                    <dt>
+                        When i'm graduating
+                    </dt>
+                    <dd>
+                        June 2021
+                    </dd>
+                    <dt>
+                        A lil about me
+                    </dt>
+                    <dd>
+                        kjdfgh jkvfdsdf ghj kjgfd dsjk lfhas djfhal sdjhfas djfakhf adsjkfhalskdfh laalsdjfalksdfjh
+                    </dd>
+
+                </dl>
+            </div>
+
+            <div class="grid-item" id="skills">
+                <h3>Skills</h3>
+
+                <input type="text" placeholder="Filter Skills " id="searchinput" onkeyup="search()"
+                    aria-label="search skills">
+                <ul id="skillslist">
+                    <li data-keywords="1,default, skill" class="skill">skill1</li>
+                    <li data-keywords="2, ability, default" class="skill">ability2</li>
+
+                </ul>
+            </div>
+            <div class="grid-item" id="experience">
+                <h3>Experience</h3>
+
+                <ul class="grid-container" id="experiencelist">
+                    <li>
+                        <dl>
+                            <dt>Explore Intern</dt>
+                            <dd>
+                                <p class="organization">Microsoft</p>
+                                <p class="duration">May 2019&dash;present</p>
+                                <p class="location">Redmond&comma;Washington</p>
+                                <p class="description">something </p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>6.009 Lecture Assistant</dt>
+                            <dd>
+                                <p class="organization">MIT School of Engineering</p>
+                                <p class="duration">Feb 2019&dash;May 2019</p>
+                                <p class="location">Cambridge&comma;Massachusetts</p>
+                                <p class="description">something </p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>New Technologist</dt>
+                            <dd>
+                                <p class="organization">Microsoft</p>
+                                <p class="duration">June 2018&dash;August 2018</p>
+                                <p class="location">Redmond&comma;Washington</p>
+                                <p class="description">
+                                    <ul>
+                                        <li>
+                                            <p>Work directly with Microsoft software engineers and program managers
+                                                through daily training sessions </p>
+                                        </li>
+                                        <li>
+                                            <p>Utilize SDLC and Agile methodology in groups of 4 to develop an app in
+                                                Swift, promoting safe communities</p>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </dd>
+                        </dl>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
 </html>
