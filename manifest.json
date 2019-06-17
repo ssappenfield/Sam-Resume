@@ -1,7 +1,7 @@
 {"name" : "Sam Resume",
     "short_name" : "Sam",
     "description" : "overview of sam's resume",
-    "start_url" : "https://ssappenfield.github.io/Sam-Resume/",
+    "start_url" : ".",
     "scope" : "/Sam-Resume/",
     "display" : "standalone",
     "orientation" : "any",
