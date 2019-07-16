@@ -7,7 +7,7 @@
     "orientation" : "any",
     "lang" : "English",
     "background_color" : "transparent",
-    "version":"test",
+    "changelog":"test",
     "icons" : [{
         "src": "images/samicon.png",
         "sizes": "44x44"
